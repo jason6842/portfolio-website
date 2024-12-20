@@ -1,10 +1,11 @@
 body {
     color: white;
-    font-family: "Rubik", "Open Sans", "Noto Sans JP", sans-serif;
+    font-family: "Segoe UI", "Roboto", "Rubik", "Open Sans", "Noto Sans JP", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-optical-sizing: auto;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .nav-link {
@@ -37,10 +38,87 @@ body {
 }
 
 .card {
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    --bg-opacity: 1;
+    --border-opacity: 0.5;
+    background-color: rgba(34, 34, 34, var(--bg-opacity));
+    border-width: 1px;
+    border-color: rgba(64, 64, 64, var(--border-opacity));
+    border-style: solid;
+}
 
+
+
+hr {
+    border: none;
+    height: 5px;
+    background: linear-gradient(to right, #ffffff, #3d3a39);
 }
 
 .card-body {
-    /* background-color: #051f20; */
+    color: rgb(163, 163, 163);
+    opacity: 1;
+}
+
+.card-title {
+    color: white;
+}
+
+.coursework-text {
+    color: rgb(163, 163, 163);
+    opacity: 1;
+}
+
+h2 {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.card-subtitle {
+    color: white;
+}
+
+
+/* Certificates */
+.flip-card {
+    perspective: 1000px;
+    width: 100%; /* Ensures responsiveness */
+    max-width: 350px; /* Sets a larger default width */
+    height: 200px; /* Increases card height */
+    margin: auto; /* Center horizontally */
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.flip-card-front {
+    background-color: #343a40; /* Dark Gray */
+    color: white;
+}
+.flip-card-back {
+    background-color: #495057; /* Slightly lighter gray */
+    color: white;
+    transform: rotateY(180deg);
 }
