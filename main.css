@@ -122,3 +122,11 @@ h4 {
     color: white;
     transform: rotateY(180deg);
 }
+
+.fixed-image {
+    height: 205px;
+    object-fit: contain;
+    width: 100%;
+    background-color: #f8f9fa;
+    display: block;
+}
