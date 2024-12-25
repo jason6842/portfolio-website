@@ -114,11 +114,11 @@ h4 {
     border-radius: 10px;
 }
 .flip-card-front {
-    background-color: #343a40; /* Dark Gray */
+    background-color: #343a40;
     color: white;
 }
 .flip-card-back {
-    background-color: #495057; /* Slightly lighter gray */
+    background-color: #495057;
     color: white;
     transform: rotateY(180deg);
 }
@@ -129,4 +129,83 @@ h4 {
     width: 100%;
     background-color: #f8f9fa;
     display: block;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 30px 0;
+}
+
+.biography .row {
+    display: flex;
+    align-items: center;
+}
+
+.biography img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.biography .text-left {
+    color: rgb(163, 163, 163);
+    opacity: 1;
+    font-size: 16px;
+}
+
+.biography h1 {
+    color: white;
+    opacity: 1;
+}
+
+.biography h4 {
+    /* color: rgb(163, 163, 163); */
+    color: white;
+    opacity: 0.9;
+}
+
+.biography a {
+    /* color: rgb(163, 163, 163); */
+    opacity: 0.8;
+    color: white;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Keeps it above other elements */
+}
+
+footer {
+    color: rgb(163, 163, 163);
+    opacity: 1;
 }
