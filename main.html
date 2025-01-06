@@ -9,71 +9,124 @@
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="assets/favicon.png" type="image/png"/>
     
 </head>
 
 <main>
     <body>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark bg-transparent">
-            <div class="container">
-                <div class="navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experiences">Experiences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#educations">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#certifications">Certfications</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    
-    <section id="home">
-        <div class="container biography">
-            <div class="row align-items-center">
-                <!-- Left column: Description -->
-                <div class="col-md-6 text-left">
-                    <h1 class="text-center">Jason Ma</h1>
-                    <h4 class="text-center">Computer Science Graduate, UC Irvine</h4>
-                    <h5>Hello, I'm Jason, a recent Computer Science graduate from the <b><a href="https://cs.ics.uci.edu/">University of California, Irvine</a></b>. My expertise lies in full-stack development, where I enjoy working across both frontend and backend to create robust and intuitive solutions. My passion for software development is driven by a desire to develop apps that improve users' daily lives.</h5>
-                </div>
-                <!-- Right column: Photo -->
-                <div class="col-md-6 text-center">
-                    <img src="assets/profile.png" class="rounded img-fluid" style="max-width: 350px;" alt="Jason Ma">
-                    <div class="social-icons mt-3">
-                        <a href="https://github.com/jason6842" target="_blank">
-                            <img src="assets/icons8-github-30.png" alt="GitHub" class="icon">
-                        </a>
-                        <a href="https://www.linkedin.com/in/jason-ma14/" target="_blank">
-                            <img src="assets/icons8-linkedin-30.png" alt="LinkedIn" class="icon">
-                        </a>
-                        <a href="mailto:jasonma062019@gmail.com">
-                            <img src="assets/icons8-email-30.png" alt="Email" class="icon">
-                        </a>
-                        <a href="assets/resume.pdf" download="My_Resume">
-                            <img src="assets/icons8-resume-30.png" alt="Resume" class="icon">
-                        </a>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jason Ma</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educations">Educations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coursework.html">Courses</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
     
+        <section id="home">
+            <div class="container biography">
+                <div class="biography">
+                    <h1 class="text-center">Jason Ma</h1>
+                </div>
+            </div>
+        </section>
     
+        <section id="projects">
+            <div class="container projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">          
+                    <div class="col">
+                        <a href="https://www.google.com" class="text-decoration-none text-reset" target="_blank">
+                            <div class="card h-100">
+                                <img src="assets/coming-soon.avif" class="card-img-top fixed-image" alt="Coming Soon">
+                                <div class="card-body">
+                                    <h5 class="card-title">SpydrNotes</h5>
+                                    <p class="card-text">A full-stack note-taking app built with React, Node.js, Express.js, and MongoDB, featuring a powerful text editor created with TipTap. Organize your thoughts effortlessly with rich-text formatting, seamless saving, and intuitive features, while also creating interactive mind maps to visually connect your ideas.</p>
+                                    <a href="https://www.google.com" class="btn btn-dark">Go somewhere</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
+                    <div class="col">
+                        <a href="https://www.google.com" class="text-decoration-none text-reset" target="_blank">
+                            <div class="card h-100">
+                                <img src="assets/coming-soon.avif" class="card-img-top fixed-image" alt="Coming Soon">
+                                <div class="card-body">
+                                    <h5 class="card-title">BobaRecs</h5>
+                                    <p class="card-text">An iOS app designed for boba lovers to discover the best milk tea spots nearby, built with Swith and utilizes the Google Places API. BobaRecs uses your location to provide a curated list of boba shops with filters for distance, ratings, reviews, and photos to help choose your next destination.</p>
+                                    <a href="https://www.google.com" class="btn btn-dark">Go somewhere</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.google.com" class="text-decoration-none text-reset" target="_blank">
+                            <div class="card h-100">
+                                <img src="assets/calmflowbalance.png" class="card-img-top fixed-image" alt="CalmFlowBalance">
+                                <div class="card-body">
+                                    <h5 class="card-title">CalmFlowBalance</h5>
+                                    <h6 class="card-subtitle mb-1">Health & Wellness App</h6>
+                                    <p class="card-text">Developed an iOS wellness app with Swift and HealthKit, offering meditation, step tracking, and sleep insights. Integrated OpenAI API for personalized workout recommendation, boosting engagement and health customization.</p>
+                                    <a href="https://www.google.com" class="btn btn-dark">Go somewhere</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.google.com" class="text-decoration-none text-reset" target="_blank">
+                            <div class="card h-100">
+                                <img src="assets/memory-masters.png" class="card-img-top fixed-image" alt="MemoryMasters">
+                                <div class="card-body">
+                                    <h5 class="card-title">Memory Masters</h5>
+                                    <h6 class="card-subtitle mb-1">Interactive Memory Game with Hand Tracking</h6>
+                                    <p class="card-text">Designed a web-based memory game with Angular and Handtrack.js to enhance cognitive skills and memory retention. Added gesture controls for improved accessibility and engagement across diverse age groups.</p>
+                                    <a href="https://www.google.com" class="btn btn-dark">Go somewhere</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.google.com" class="text-decoration-none text-reset" target="_blank">
+                            <div class="card h-100">
+                                <img src="assets/sleeptracker.png" class="card-img-top fixed-image" alt="SleepTracker">
+                                <div class="card-body">
+                                    <h5 class="card-title">SleepTracker</h5>
+                                    <p class="card-text">SleepTracker is a cross-platform app built with Ionic Framework, Angular, and Capacitor to help users monitor and visualize their sleep patterns using the Stanford Sleepiness Scale. It features intuitive logging, native sharing, local data backup, dark mode, and visual graphs for a user-friendly experience.</p>
+                                    <a href="https://www.google.com" class="btn btn-dark">Go somewhere</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    
+
         <section id="experiences">
             <div class="container experiences">
                 <hr class="solid">
@@ -122,79 +175,6 @@
         </section>
         
 
-        <section id="projects">
-            <div class="container projects">
-                <hr class="solid">
-                <h2 class="section-title">Projects</h2>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">          
-                    <div class="col">
-                        <a href="https://github.com/ajwadtahmid/SpydrNotes" class="text-decoration-none text-reset" target="_blank">
-                            <div class="card h-100">
-                                <img src="assets/spydrnotes.png" class="card-img-top fixed-image" alt="SpydrNotes">
-                                <div class="card-body">
-                                    <h5 class="card-title">SpydrNotes</h5>
-                                    <p class="card-text">A full-stack note-taking app built with React, Node.js, Express.js, and MongoDB, featuring a powerful text editor created with TipTap. Organize your thoughts effortlessly with rich-text formatting, seamless saving, and intuitive features, while also creating interactive mind maps to visually connect your ideas.</p>
-                                    <!-- <a href="https://github.com/ajwadtahmid/SpydrNotes" class="btn btn-dark w-auto d-inline-flex align-items-center" style="padding: 6px 12px; font-size: 14px;">
-                                        <img src="assets/github-original.svg" alt="GitHub" style="height: 16px; margin-right: 6px;">GitHub
-                                    </a> -->
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-        
-                    <div class="col">
-                            <div class="card h-100">
-                                <img src="assets/coming-soon.avif" class="card-img-top fixed-image" alt="Coming Soon">
-                                <div class="card-body">
-                                    <h5 class="card-title">BobaRecs</h5>
-                                    <p class="card-text">An iOS app designed for boba lovers to discover the best milk tea spots nearby, built with Swith and utilizes the Google Places API. BobaRecs uses your location to provide a curated list of boba shops with filters for distance, ratings, reviews, and photos to help choose your next destination.</p>
-                                    <!-- <a href="https://www.google.com" class="btn btn-dark">Go somewhere</a> -->
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col">
-                            <div class="card h-100">
-                                <img src="assets/calmflowbalance.png" class="card-img-top fixed-image" alt="CalmFlowBalance">
-                                <div class="card-body">
-                                    <h5 class="card-title">CalmFlowBalance</h5>
-                                    <h6 class="card-subtitle mb-1">Health & Wellness App</h6>
-                                    <p class="card-text">Developed an iOS wellness app with Swift and HealthKit, offering meditation, step tracking, and sleep insights. Integrated OpenAI API for personalized workout recommendation, boosting engagement and health customization.</p>
-                                    <!-- <a href="https://www.google.com" class="btn btn-dark">Go somewhere</a> -->
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col">
-                            <div class="card h-100">
-                                <img src="assets/memory-masters.png" class="card-img-top fixed-image" alt="MemoryMasters">
-                                <div class="card-body">
-                                    <h5 class="card-title">Memory Masters</h5>
-                                    <h6 class="card-subtitle mb-1">Interactive Memory Game with Hand Tracking</h6>
-                                    <p class="card-text">Designed a web-based memory game with Angular and Handtrack.js to enhance cognitive skills and memory retention. Added gesture controls for improved accessibility and engagement across diverse age groups.</p>
-                                    <!-- <a href="https://www.google.com" class="btn btn-dark">Go somewhere</a> -->
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col">
-                        <!-- <a href="https://www.google.com" class="text-decoration-none text-reset" target="_blank"> -->
-                            <div class="card h-100">
-                                <img src="assets/sleeptracker.png" class="card-img-top fixed-image" alt="SleepTracker">
-                                <div class="card-body">
-                                    <h5 class="card-title">SleepTracker</h5>
-                                    <p class="card-text">SleepTracker is a cross-platform app built with Ionic Framework, Angular, and Capacitor to help users monitor and visualize their sleep patterns using the Stanford Sleepiness Scale. It features intuitive logging, native sharing, local data backup, dark mode, and visual graphs for a user-friendly experience.</p>
-                                    <!-- <a href="https://www.google.com" class="btn btn-dark">Go somewhere</a> -->
-                                </div>
-                            </div>
-                        <!-- </a> -->
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-    
-
-
-
         <section id="educations">
             <div class="container educations">
                 <hr class="solid">
@@ -219,7 +199,7 @@
                                 <ul>
                                     <li>GPA: 3.66/4.0</li>
                                     <li>Dean's Honor List</li>
-                                    <li>Graduated Sept 2024</li>
+                                    <li>Graduated June 2022</li>
                                 </ul>
                             </div>
                         </div>
@@ -271,9 +251,6 @@
                         <img src="assets/nodejs.svg" alt="Node.js" class="skill-icon">
                     </div>
                     <div class="col">
-                        <img src="assets/mongodb.svg" alt="MongoDB" class="skill-icon">
-                    </div>
-                    <div class="col">
                         <img src="assets/mysql.svg" alt="MySQL" class="skill-icon">
                     </div>
                 </div>
@@ -309,6 +286,9 @@
                 <div class="row mb-4">
                     <h3 class="text-secondary text-center">Development Tools</h3>
                     <div class="col">
+                        <img src="assets/git.svg" alt="Git" class="skill-icon">
+                    </div>
+                    <div class="col">
                         <img src="assets/vscode.svg" alt="Visual Studio Code" class="skill-icon">
                     </div>
                     <div class="col">
@@ -323,17 +303,11 @@
                     <div class="col">
                         <img src="assets/figma.svg" alt="Figma" class="skill-icon">
                     </div>
-                    <div class="col">
-                        <img src="assets/github.svg" alt="GitHub" class="skill-icon">
-                    </div>
                 </div>
 
                 <!-- Infrastructure Tools -->
                 <div class="row mb-4">
                     <h3 class="text-secondary text-center">Infrastructure Tools</h3>
-                    <div class="col">
-                        <img src="assets/git.svg" alt="Git" class="skill-icon">
-                    </div>
                     <div class="col">
                         <img src="assets/docker.svg" alt="Docker" class="skill-icon">
                     </div>
@@ -344,51 +318,23 @@
                         <img src="assets/linux.svg" alt="Linux" class="skill-icon">
                     </div>
                 </div>
+
             </div>
         </section>
         
-
         <section id="certifications">
             <div class="container certifications">
-                <hr class="solid">
-                <div class="row row-cols-1 row-cols-sm-2 g-3">
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card bg-transparent border-0 h-100">
-                            <div class="card-body">
-                                <div class="courses">
-                                    <h2 class="section-title d-flex justify-content-center align-items-center h-100">Courses</h2>
-                                    <div class="d-flex justify-content-center align-items-center h-100">
-                                        <button class="btn btn-dark" onclick="location.href='coursework.html'" type="button" style="padding: 15px 30px;"><b>View Courses</b></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card bg-transparent border-0 h-100">
-                            <div class="card-body">
-                                <div class="certifications">
-                                    <h2 class="section-title d-flex justify-content-center align-items-center h-100">Certifications</h2>
-                                    <div class="d-flex justify-content-center align-items-center h-100">
-                                        <button class="btn btn-dark" onclick="location.href='certifications.html'" type="button" style="padding: 15px 30px;"><b>View Certifications</b></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h2 class="section-title">Certifications</h2>
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <button class="btn btn-dark" onclick="location.href='certifications.html'" type="button">View Certifications</button>
                 </div>
+                
             </div>
         </section>
 
-        <footer class="d-flex align-items-center py-3" style="background-color: transparent;">
-            <div class="container d-flex justify-content-end">
-                <span>©2024 Jason Ma | All Rights Reserved</span>
-            </div>
-        </footer>
-        
+
 
     </body>
-
     
 
 </main>
